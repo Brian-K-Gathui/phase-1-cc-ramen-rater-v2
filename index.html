@@ -13,11 +13,9 @@
     <h3>Ramen Rater</h3>
   </header>
 
-  
   <div id="ramen-menu">
-  
+    <!-- Ramen images will be dynamically inserted here -->
   </div>
-
 
   <div id="ramen-detail">
     <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
@@ -34,7 +32,7 @@
     Insert comment here
   </p>
 
-
+  <!-- Form to add new ramen -->
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
     <label for="new-name">Name: </label>
@@ -46,11 +44,23 @@
     <label for="new-rating">Rating: </label>
     <input type="number" name="rating" id="new-rating" />
     <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
-    <input type="submit" id='submit-button' value="Create" />
+    <textarea name="new-comment" id="new-comment"></textarea>
+    <input  id="submit-ramen" type="submit"value="Create" />
   </form>
+
+  <!-- Form to edit existing ramen rating and comment -->
+  <form id="edit-ramen">
+    <h4>Update the Featured Ramen</h4>
+    <label for="new-rating">Rating: </label>
+    <input type="number" name="rating" id="new-rating" />
+    <label for="new-comment">Comment: </label>
+    <textarea name="new-comment" id="new-comment"></textarea>
+    <input id="update-ramen" type="submit" value="Update" />
+  </form>
+
+  <!-- Delete button to remove ramen -->
+  <button id="delete-ramen">Delete Ramen</button>
 
 </body>
 
 </html>
-
